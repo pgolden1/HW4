@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0A0B8242230ADCB0025EAE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8232230ADCB0025EAE4 /* AppDelegate.m */; };
+		B0A0B8272230ADCB0025EAE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8262230ADCB0025EAE4 /* ViewController.m */; };
+		B0A0B82A2230ADCB0025EAE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0B8282230ADCB0025EAE4 /* Main.storyboard */; };
+		B0A0B82C2230ADCC0025EAE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A0B82B2230ADCC0025EAE4 /* Assets.xcassets */; };
+		B0A0B82F2230ADCC0025EAE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0B82D2230ADCC0025EAE4 /* LaunchScreen.storyboard */; };
+		B0A0B8322230ADCC0025EAE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8312230ADCC0025EAE4 /* main.m */; };
+		B0A0B83C2230ADCC0025EAE4 /* Goomba_JumpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B83B2230ADCC0025EAE4 /* Goomba_JumpTests.m */; };
+		B0A0B8472230ADCC0025EAE4 /* Goomba_JumpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8462230ADCC0025EAE4 /* Goomba_JumpUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0A0B8382230ADCC0025EAE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0A0B8172230ADCB0025EAE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0A0B81E2230ADCB0025EAE4;
+			remoteInfo = "Goomba Jump";
+		};
+		B0A0B8432230ADCC0025EAE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0A0B8172230ADCB0025EAE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0A0B81E2230ADCB0025EAE4;
+			remoteInfo = "Goomba Jump";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0A0B81F2230ADCB0025EAE4 /* Goomba Jump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goomba Jump.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A0B8222230ADCB0025EAE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B0A0B8232230ADCB0025EAE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B0A0B8252230ADCB0025EAE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B0A0B8262230ADCB0025EAE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B0A0B8292230ADCB0025EAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0A0B82B2230ADCC0025EAE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0A0B82E2230ADCC0025EAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0A0B8302230ADCC0025EAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0A0B8312230ADCC0025EAE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0A0B8372230ADCC0025EAE4 /* Goomba JumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goomba JumpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A0B83B2230ADCC0025EAE4 /* Goomba_JumpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Goomba_JumpTests.m; sourceTree = "<group>"; };
+		B0A0B83D2230ADCC0025EAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0A0B8422230ADCC0025EAE4 /* Goomba JumpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goomba JumpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A0B8462230ADCC0025EAE4 /* Goomba_JumpUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Goomba_JumpUITests.m; sourceTree = "<group>"; };
+		B0A0B8482230ADCC0025EAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0A0B81C2230ADCB0025EAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0A0B8342230ADCC0025EAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0A0B83F2230ADCC0025EAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0A0B8162230ADCB0025EAE4 = {
+			isa = PBXGroup;
+			children = (
+				B0A0B8212230ADCB0025EAE4 /* Goomba Jump */,
+				B0A0B83A2230ADCC0025EAE4 /* Goomba JumpTests */,
+				B0A0B8452230ADCC0025EAE4 /* Goomba JumpUITests */,
+				B0A0B8202230ADCB0025EAE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0A0B8202230ADCB0025EAE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0A0B81F2230ADCB0025EAE4 /* Goomba Jump.app */,
+				B0A0B8372230ADCC0025EAE4 /* Goomba JumpTests.xctest */,
+				B0A0B8422230ADCC0025EAE4 /* Goomba JumpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0A0B8212230ADCB0025EAE4 /* Goomba Jump */ = {
+			isa = PBXGroup;
+			children = (
+				B0A0B8222230ADCB0025EAE4 /* AppDelegate.h */,
+				B0A0B8232230ADCB0025EAE4 /* AppDelegate.m */,
+				B0A0B8252230ADCB0025EAE4 /* ViewController.h */,
+				B0A0B8262230ADCB0025EAE4 /* ViewController.m */,
+				B0A0B8282230ADCB0025EAE4 /* Main.storyboard */,
+				B0A0B82B2230ADCC0025EAE4 /* Assets.xcassets */,
+				B0A0B82D2230ADCC0025EAE4 /* LaunchScreen.storyboard */,
+				B0A0B8302230ADCC0025EAE4 /* Info.plist */,
+				B0A0B8312230ADCC0025EAE4 /* main.m */,
+			);
+			path = "Goomba Jump";
+			sourceTree = "<group>";
+		};
+		B0A0B83A2230ADCC0025EAE4 /* Goomba JumpTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0A0B83B2230ADCC0025EAE4 /* Goomba_JumpTests.m */,
+				B0A0B83D2230ADCC0025EAE4 /* Info.plist */,
+			);
+			path = "Goomba JumpTests";
+			sourceTree = "<group>";
+		};
+		B0A0B8452230ADCC0025EAE4 /* Goomba JumpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0A0B8462230ADCC0025EAE4 /* Goomba_JumpUITests.m */,
+				B0A0B8482230ADCC0025EAE4 /* Info.plist */,
+			);
+			path = "Goomba JumpUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0A0B81E2230ADCB0025EAE4 /* Goomba Jump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0A0B84B2230ADCC0025EAE4 /* Build configuration list for PBXNativeTarget "Goomba Jump" */;
+			buildPhases = (
+				B0A0B81B2230ADCB0025EAE4 /* Sources */,
+				B0A0B81C2230ADCB0025EAE4 /* Frameworks */,
+				B0A0B81D2230ADCB0025EAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Goomba Jump";
+			productName = "Goomba Jump";
+			productReference = B0A0B81F2230ADCB0025EAE4 /* Goomba Jump.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0A0B8362230ADCC0025EAE4 /* Goomba JumpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0A0B84E2230ADCC0025EAE4 /* Build configuration list for PBXNativeTarget "Goomba JumpTests" */;
+			buildPhases = (
+				B0A0B8332230ADCC0025EAE4 /* Sources */,
+				B0A0B8342230ADCC0025EAE4 /* Frameworks */,
+				B0A0B8352230ADCC0025EAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0A0B8392230ADCC0025EAE4 /* PBXTargetDependency */,
+			);
+			name = "Goomba JumpTests";
+			productName = "Goomba JumpTests";
+			productReference = B0A0B8372230ADCC0025EAE4 /* Goomba JumpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0A0B8412230ADCC0025EAE4 /* Goomba JumpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0A0B8512230ADCC0025EAE4 /* Build configuration list for PBXNativeTarget "Goomba JumpUITests" */;
+			buildPhases = (
+				B0A0B83E2230ADCC0025EAE4 /* Sources */,
+				B0A0B83F2230ADCC0025EAE4 /* Frameworks */,
+				B0A0B8402230ADCC0025EAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0A0B8442230ADCC0025EAE4 /* PBXTargetDependency */,
+			);
+			name = "Goomba JumpUITests";
+			productName = "Goomba JumpUITests";
+			productReference = B0A0B8422230ADCC0025EAE4 /* Goomba JumpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0A0B8172230ADCB0025EAE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Peter Golden";
+				TargetAttributes = {
+					B0A0B81E2230ADCB0025EAE4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B0A0B8362230ADCC0025EAE4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B0A0B81E2230ADCB0025EAE4;
+					};
+					B0A0B8412230ADCC0025EAE4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B0A0B81E2230ADCB0025EAE4;
+					};
+				};
+			};
+			buildConfigurationList = B0A0B81A2230ADCB0025EAE4 /* Build configuration list for PBXProject "Goomba Jump" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0A0B8162230ADCB0025EAE4;
+			productRefGroup = B0A0B8202230ADCB0025EAE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0A0B81E2230ADCB0025EAE4 /* Goomba Jump */,
+				B0A0B8362230ADCC0025EAE4 /* Goomba JumpTests */,
+				B0A0B8412230ADCC0025EAE4 /* Goomba JumpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0A0B81D2230ADCB0025EAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0A0B82F2230ADCC0025EAE4 /* LaunchScreen.storyboard in Resources */,
+				B0A0B82C2230ADCC0025EAE4 /* Assets.xcassets in Resources */,
+				B0A0B82A2230ADCB0025EAE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0A0B8352230ADCC0025EAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0A0B8402230ADCC0025EAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0A0B81B2230ADCB0025EAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0A0B8272230ADCB0025EAE4 /* ViewController.m in Sources */,
+				B0A0B8322230ADCC0025EAE4 /* main.m in Sources */,
+				B0A0B8242230ADCB0025EAE4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0A0B8332230ADCC0025EAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0A0B83C2230ADCC0025EAE4 /* Goomba_JumpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0A0B83E2230ADCC0025EAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0A0B8472230ADCC0025EAE4 /* Goomba_JumpUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0A0B8392230ADCC0025EAE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0A0B81E2230ADCB0025EAE4 /* Goomba Jump */;
+			targetProxy = B0A0B8382230ADCC0025EAE4 /* PBXContainerItemProxy */;
+		};
+		B0A0B8442230ADCC0025EAE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0A0B81E2230ADCB0025EAE4 /* Goomba Jump */;
+			targetProxy = B0A0B8432230ADCC0025EAE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0A0B8282230ADCB0025EAE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0A0B8292230ADCB0025EAE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0A0B82D2230ADCC0025EAE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0A0B82E2230ADCC0025EAE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0A0B8492230ADCC0025EAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B0A0B84A2230ADCC0025EAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0A0B84C2230ADCC0025EAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Goomba Jump/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Goomba-Jump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0A0B84D2230ADCC0025EAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Goomba Jump/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Goomba-Jump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0A0B84F2230ADCC0025EAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Goomba JumpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Goomba-JumpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goomba Jump.app/Goomba Jump";
+			};
+			name = Debug;
+		};
+		B0A0B8502230ADCC0025EAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Goomba JumpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Goomba-JumpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goomba Jump.app/Goomba Jump";
+			};
+			name = Release;
+		};
+		B0A0B8522230ADCC0025EAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Goomba JumpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Goomba-JumpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Goomba Jump";
+			};
+			name = Debug;
+		};
+		B0A0B8532230ADCC0025EAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Goomba JumpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Goomba-JumpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Goomba Jump";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0A0B81A2230ADCB0025EAE4 /* Build configuration list for PBXProject "Goomba Jump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0A0B8492230ADCC0025EAE4 /* Debug */,
+				B0A0B84A2230ADCC0025EAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0A0B84B2230ADCC0025EAE4 /* Build configuration list for PBXNativeTarget "Goomba Jump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0A0B84C2230ADCC0025EAE4 /* Debug */,
+				B0A0B84D2230ADCC0025EAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0A0B84E2230ADCC0025EAE4 /* Build configuration list for PBXNativeTarget "Goomba JumpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0A0B84F2230ADCC0025EAE4 /* Debug */,
+				B0A0B8502230ADCC0025EAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0A0B8512230ADCC0025EAE4 /* Build configuration list for PBXNativeTarget "Goomba JumpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0A0B8522230ADCC0025EAE4 /* Debug */,
+				B0A0B8532230ADCC0025EAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0A0B8172230ADCB0025EAE4 /* Project object */;
+}
