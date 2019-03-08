@@ -18,32 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _sky.image = [UIImage imageNamed: @"sky"];
-    
-    _floor.image = [UIImage imageNamed: @"floor20"];
-    
-    _logo.image = [UIImage imageNamed: @"logo"];
-    
-    _pipeLeft.image = [UIImage imageNamed: @"pipeleft"];
-    
-    _pipeRight.image = [UIImage imageNamed: @"piperight"];
-    
-    _mario.image = [UIImage imageNamed: @"mario"];
-    
-    UIImage* buttonLeftIMG = [UIImage imageNamed: @"walkleft"];
-    UIImage* buttonCenterIMG = [UIImage imageNamed: @"jump"];
-    UIImage* buttonRightIMG = [UIImage imageNamed: @"walkright"];
-    
-    [_buttonLeft setBackgroundImage: buttonLeftIMG forState:UIControlStateNormal];
-    
-    [_buttonCenter setBackgroundImage: buttonCenterIMG forState:UIControlStateNormal];
-    
-    [_buttonRight setBackgroundImage: buttonRightIMG forState:UIControlStateNormal];
-
 }
-
-
-
 
 
 @end

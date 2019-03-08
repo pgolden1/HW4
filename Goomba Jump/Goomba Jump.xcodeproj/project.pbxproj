@@ -15,6 +15,8 @@
 		B0A0B8322230ADCC0025EAE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8312230ADCC0025EAE4 /* main.m */; };
 		B0A0B83C2230ADCC0025EAE4 /* Goomba_JumpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B83B2230ADCC0025EAE4 /* Goomba_JumpTests.m */; };
 		B0A0B8472230ADCC0025EAE4 /* Goomba_JumpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8462230ADCC0025EAE4 /* Goomba_JumpUITests.m */; };
+		B0A0B8562231DDCC0025EAE4 /* MovementState.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8552231DDCC0025EAE4 /* MovementState.m */; };
+		B0A0B8592231E7AF0025EAE4 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8582231E7AF0025EAE4 /* GameView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		B0A0B8422230ADCC0025EAE4 /* Goomba JumpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goomba JumpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A0B8462230ADCC0025EAE4 /* Goomba_JumpUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Goomba_JumpUITests.m; sourceTree = "<group>"; };
 		B0A0B8482230ADCC0025EAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0A0B8542231DD870025EAE4 /* MovementState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovementState.h; sourceTree = "<group>"; };
+		B0A0B8552231DDCC0025EAE4 /* MovementState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovementState.m; sourceTree = "<group>"; };
+		B0A0B8572231E7A30025EAE4 /* GameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		B0A0B8582231E7AF0025EAE4 /* GameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				B0A0B8232230ADCB0025EAE4 /* AppDelegate.m */,
 				B0A0B8252230ADCB0025EAE4 /* ViewController.h */,
 				B0A0B8262230ADCB0025EAE4 /* ViewController.m */,
+				B0A0B8572231E7A30025EAE4 /* GameView.h */,
+				B0A0B8582231E7AF0025EAE4 /* GameView.m */,
+				B0A0B8542231DD870025EAE4 /* MovementState.h */,
+				B0A0B8552231DDCC0025EAE4 /* MovementState.m */,
 				B0A0B8282230ADCB0025EAE4 /* Main.storyboard */,
 				B0A0B82B2230ADCC0025EAE4 /* Assets.xcassets */,
 				B0A0B82D2230ADCC0025EAE4 /* LaunchScreen.storyboard */,
@@ -263,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0A0B8272230ADCB0025EAE4 /* ViewController.m in Sources */,
+				B0A0B8592231E7AF0025EAE4 /* GameView.m in Sources */,
 				B0A0B8322230ADCC0025EAE4 /* main.m in Sources */,
+				B0A0B8562231DDCC0025EAE4 /* MovementState.m in Sources */,
 				B0A0B8242230ADCB0025EAE4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
