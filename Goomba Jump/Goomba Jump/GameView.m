@@ -10,15 +10,23 @@
 #import "GameView.h"
 
 @implementation GameView
-
+@synthesize scene;
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     
-    if ((self = [super initWithCoder:aDecoder])) {
+    
+    if (self = [super initWithCoder:aDecoder]) {
         
-        _ms = [[MovementState alloc] init];
+        NSLog(@"View initWithCoder");
         
         _isPlaying = false;
+        
+        self.scene = (SKScene *)[SKScene nodeWithFileNamed:@"GameScene"];
+        GameScene* temp = (GameScene*) self.scene;
+        temp.ControllingView = self;
+        
+        self.scene.scaleMode = SKSceneScaleModeAspectFill;
+
         
         self.timer = [NSTimer scheduledTimerWithTimeInterval:.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
             [self performSelectorOnMainThread:@selector(tick:) withObject:self.timer waitUntilDone:NO];
@@ -28,25 +36,20 @@
 }
 
 -(IBAction) pressWalkLeft: (UIButton*) sender{
-    [_ms startWalking];
-    [_ms setLeft];
+    
 }
 
 -(IBAction) releaseWalkLeft: (UIButton*) sender{
-    [_ms stopWalking];
-    [_ms setLeft];
+   
 }
 
 -(IBAction) pressWalkRight: (UIButton*) sender{
-    [_ms startWalking];
 }
 
 -(IBAction) releaseWalkRight: (UIButton*) sender{
-    [_ms stopWalking];
 }
 
 -(IBAction) pressjump: (UIButton*) sender{
-    [_ms jump];
 }
 
 -(IBAction) pressPlay: (UIButton*) sender{
@@ -81,7 +84,7 @@
 }
 
 -(void) tick: (id) sender{
-    //if(_isPlaying) _mario.image = [_ms getCurrentMS];
+    
 }
 
 @end

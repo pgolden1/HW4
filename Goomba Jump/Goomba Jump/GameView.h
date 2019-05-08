@@ -10,27 +10,29 @@
 #define GameView_h
 
 #import <UIKit/UIKit.h>
-#import "MovementState.h"
+#import <SpriteKit/SpriteKit.h>
+#import "GameScene.h"
 
-@interface GameView: UIView
+@class GameScene;
+
+@interface GameView: SKView
 
 @property (weak, nonatomic) IBOutlet UIImageView *sky;
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 @property (weak, nonatomic) IBOutlet UIImageView *floor;
 @property (weak, nonatomic) IBOutlet UIImageView *pipeLeft;
 @property (weak, nonatomic) IBOutlet UIImageView *pipeRight;
-@property (weak, nonatomic) IBOutlet UIImageView *mario;
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonLeft;
 @property (weak, nonatomic) IBOutlet UIButton *buttonCenter;
 @property (weak, nonatomic) IBOutlet UIButton *buttonRight;
 @property (weak, nonatomic) IBOutlet UIButton *buttonTop;
 @property (weak, nonatomic) IBOutlet UIButton *buttonPlay;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;   
 
+@property (weak, nonatomic) SKScene *scene;
 @property (nonatomic, strong) NSTimer *timer;
 @property bool isPlaying;
-@property (nonatomic, strong) MovementState* ms;
 
 
 -(IBAction) pressWalkLeft: (UIButton*) sender;
