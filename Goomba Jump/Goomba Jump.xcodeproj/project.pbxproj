@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B064073222824100008D9751 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B0640730228240FF008D9751 /* GameScene.m */; };
-		B0640736228279A2008D9751 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0640735228279A2008D9751 /* GameScene.sks */; };
 		B0A0B8242230ADCB0025EAE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8232230ADCB0025EAE4 /* AppDelegate.m */; };
 		B0A0B8272230ADCB0025EAE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8262230ADCB0025EAE4 /* ViewController.m */; };
 		B0A0B82A2230ADCB0025EAE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0B8282230ADCB0025EAE4 /* Main.storyboard */; };
@@ -39,9 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B0640730228240FF008D9751 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		B0640731228240FF008D9751 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		B0640735228279A2008D9751 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		B0A0B81F2230ADCB0025EAE4 /* Goomba Jump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goomba Jump.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A0B8222230ADCB0025EAE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0A0B8232230ADCB0025EAE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,14 +111,11 @@
 				B0A0B8232230ADCB0025EAE4 /* AppDelegate.m */,
 				B0A0B8252230ADCB0025EAE4 /* ViewController.h */,
 				B0A0B8262230ADCB0025EAE4 /* ViewController.m */,
-				B0640735228279A2008D9751 /* GameScene.sks */,
-				B0640731228240FF008D9751 /* GameScene.h */,
-				B0640730228240FF008D9751 /* GameScene.m */,
 				B0A0B8572231E7A30025EAE4 /* GameView.h */,
 				B0A0B8582231E7AF0025EAE4 /* GameView.m */,
-				B0A0B8282230ADCB0025EAE4 /* Main.storyboard */,
 				B0A0B8542231DD870025EAE4 /* MovementState.h */,
 				B0A0B8552231DDCC0025EAE4 /* MovementState.m */,
+				B0A0B8282230ADCB0025EAE4 /* Main.storyboard */,
 				B0A0B82B2230ADCC0025EAE4 /* Assets.xcassets */,
 				B0A0B82D2230ADCC0025EAE4 /* LaunchScreen.storyboard */,
 				B0A0B8302230ADCC0025EAE4 /* Info.plist */,
@@ -253,7 +245,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0640736228279A2008D9751 /* GameScene.sks in Resources */,
 				B0A0B82F2230ADCC0025EAE4 /* LaunchScreen.storyboard in Resources */,
 				B0A0B82C2230ADCC0025EAE4 /* Assets.xcassets in Resources */,
 				B0A0B82A2230ADCB0025EAE4 /* Main.storyboard in Resources */,
@@ -285,7 +276,6 @@
 				B0A0B8592231E7AF0025EAE4 /* GameView.m in Sources */,
 				B0A0B8322230ADCC0025EAE4 /* main.m in Sources */,
 				B0A0B8562231DDCC0025EAE4 /* MovementState.m in Sources */,
-				B064073222824100008D9751 /* GameScene.m in Sources */,
 				B0A0B8242230ADCB0025EAE4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

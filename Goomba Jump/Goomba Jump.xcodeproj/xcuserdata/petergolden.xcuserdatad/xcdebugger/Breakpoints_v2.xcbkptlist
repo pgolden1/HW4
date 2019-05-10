@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Goomba Jump/GameView.h"
-            timestampString = "578976320.7452641"
+            timestampString = "573709805.587647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "pipeLeft"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "floor"
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Goomba Jump/ViewController.m"
-            timestampString = "578976320.74543"
+            timestampString = "573709805.587816"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "5"
