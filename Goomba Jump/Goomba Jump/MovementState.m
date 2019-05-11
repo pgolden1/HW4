@@ -18,9 +18,13 @@
     self = [super init];
     
     if(self){
-        _isJumping = false;
+        _walkDirection = false;
         _isWalking = false;
-        _walkDirection = true;
+        _walkMagnitude = 0;
+        _isJumping = false;
+        
+        _currentX = 310;
+        _currentY = 249;
         
         _marioWalkR1 = [UIImage imageNamed: @"walkingmario1"];
         _marioWalkR2 = [UIImage imageNamed: @"walkingmario2"];
@@ -39,20 +43,38 @@
 }
 
 
--(void) startWalking{
+-(void) pressWalkLeft{
     _isWalking = true;
-}
-
--(void) stopWalking{
-    _isWalking = false;
-}
-
--(void) jump{
-    _isJumping = true;
-}
-
--(void) setLeft{
     _walkDirection = false;
+    if(_walkMagnitude > 0) _walkMagnitude = 0;
+    if(_walkMagnitude < -5) _walkMagnitude--;
+}
+
+-(void) releaseWalkLeft{
+    _isWalking = false;
+    _walkDirection = false;
+    _walkMagnitude = 0;
+}
+
+-(void) pressWalkRight{
+    _isWalking = true;
+    _walkDirection = true;
+    if(_walkMagnitude < 0) _walkMagnitude = 0;
+    
+}
+
+-(void) releaseWalkRight{
+    _isWalking = false;
+    _walkDirection = true;
+    _walkMagnitude = 0;
+}
+
+-(void) pressjump{
+    _currentY--;
+}
+
+-(bool) isWalkng{
+    return _isWalking;
 }
 
 -(void) setRight{
@@ -82,6 +104,40 @@
         }
     }
     return retImg;
+}
+
+-(CGPoint) getCurrentPos{
+    if(_walkDirection){
+        if(_currentY < 189){
+            if(_currentX < 620){
+                _currentX += _walkMagnitude;
+                if(_walkMagnitude < 15) _walkMagnitude += 2;
+            }
+        }
+        else{
+            if(_currentX < 540){
+                _currentX += _walkMagnitude;
+                if(_walkMagnitude < 15) _walkMagnitude += 2;
+            }
+        }
+    }
+     else{
+         if(_currentY > 188){
+             if(_currentX > 12){
+                 _currentX += _walkMagnitude;
+                 if(_walkMagnitude > -15) _walkMagnitude -= 2;
+             }
+         }
+         else{
+             if(_currentX > 92){
+                 _currentX += _walkMagnitude;
+                 if(_walkMagnitude > -15) _walkMagnitude -= 2;
+             }
+         }
+     }
+    
+    
+    return CGPointMake(_currentX, _currentY);
 }
 
 

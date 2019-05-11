@@ -28,6 +28,12 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonPlay;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
+//false for left, true for right
+@property (nonatomic) BOOL walkDirection;
+@property (nonatomic) BOOL isWalking;
+@property (nonatomic) BOOL isJumping;
+@property (nonatomic) int walkMagnitude;
+
 @property (nonatomic, strong) NSTimer *timer;
 @property bool isPlaying;
 @property (nonatomic, strong) MovementState* ms;

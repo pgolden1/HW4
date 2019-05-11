@@ -19,6 +19,10 @@
         _ms = [[MovementState alloc] init];
         
         _isPlaying = false;
+        _walkDirection = false;
+        _isWalking = false;
+        _walkMagnitude = 0;
+        _isJumping = false;
         
         self.timer = [NSTimer scheduledTimerWithTimeInterval:.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
             [self performSelectorOnMainThread:@selector(tick:) withObject:self.timer waitUntilDone:NO];
@@ -28,25 +32,24 @@
 }
 
 -(IBAction) pressWalkLeft: (UIButton*) sender{
-    [_ms startWalking];
-    [_ms setLeft];
+    [_ms pressWalkLeft];
 }
 
 -(IBAction) releaseWalkLeft: (UIButton*) sender{
-    [_ms stopWalking];
-    [_ms setLeft];
+    [_ms releaseWalkLeft];
 }
 
 -(IBAction) pressWalkRight: (UIButton*) sender{
-    [_ms startWalking];
+    [_ms pressWalkRight];
+
 }
 
 -(IBAction) releaseWalkRight: (UIButton*) sender{
-    [_ms stopWalking];
+    [_ms releaseWalkRight];
 }
 
 -(IBAction) pressjump: (UIButton*) sender{
-    [_ms jump];
+    [_ms pressjump];
 }
 
 -(IBAction) pressPlay: (UIButton*) sender{
@@ -81,7 +84,36 @@
 }
 
 -(void) tick: (id) sender{
-    //if(_isPlaying) _mario.image = [_ms getCurrentMS];
+    if(_isPlaying){
+        if([_ms isWalkng]){
+            
+            //height = 188
+            
+            
+            
+            NSLog(@"%d", _walkMagnitude);
+            CGRect marioCurrent = _mario.frame;
+            NSLog(@"%f %f", marioCurrent.origin.x, marioCurrent.origin.y);
+            marioCurrent.origin = [_ms getCurrentPos];
+            
+            /*if(_walkDirection){
+                if(marioCurrent.origin.y > 188)
+                if(marioCurrent.origin.x < 620){
+                    marioCurrent.origin.x += _walkMagnitude;
+                    if(_walkMagnitude < 15) _walkMagnitude += 2;
+                }
+            }
+            else{
+                if(marioCurrent.origin.x > 12){
+                    marioCurrent.origin.x += _walkMagnitude;
+                    if(_walkMagnitude > -15) _walkMagnitude -= 2;
+                }
+            }*/
+
+                
+            _mario.frame = marioCurrent;
+        }
+    }
 }
 
 @end

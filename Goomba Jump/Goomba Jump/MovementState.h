@@ -17,7 +17,10 @@
 @property (nonatomic) BOOL walkDirection;
 @property (nonatomic) BOOL isWalking;
 @property (nonatomic) BOOL isJumping;
+@property (nonatomic) int walkMagnitude;
 @property (nonatomic) int walkState;
+@property (nonatomic) float currentX;
+@property (nonatomic) float currentY;
 
 @property (weak, nonatomic) NSArray* walkingImages;
 
@@ -34,12 +37,14 @@
 
 + (void) initialize;
 -(id) init;
--(void) startWalking;
--(void) stopWalking;
--(void) jump;
--(void) setLeft;
--(void) setRight;
+-(void) pressWalkLeft;
+-(void) releaseWalkLeft;
+-(void) pressWalkRight;
+-(void) releaseWalkRight;
+-(void) pressjump;
+-(bool) isWalkng;
 -(UIImage*) getCurrentMS;
+-(CGPoint) getCurrentPos;
 
 @end
 
