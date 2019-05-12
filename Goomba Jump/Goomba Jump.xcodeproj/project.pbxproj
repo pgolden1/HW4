@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B05F220C228783CE009F88FB /* Goomba.m in Sources */ = {isa = PBXBuildFile; fileRef = B05F220B228783CE009F88FB /* Goomba.m */; };
 		B0A0B8242230ADCB0025EAE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8232230ADCB0025EAE4 /* AppDelegate.m */; };
 		B0A0B8272230ADCB0025EAE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A0B8262230ADCB0025EAE4 /* ViewController.m */; };
 		B0A0B82A2230ADCB0025EAE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0B8282230ADCB0025EAE4 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B05F220A228783C2009F88FB /* Goomba.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Goomba.h; sourceTree = "<group>"; };
+		B05F220B228783CE009F88FB /* Goomba.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Goomba.m; sourceTree = "<group>"; };
 		B0A0B81F2230ADCB0025EAE4 /* Goomba Jump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goomba Jump.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A0B8222230ADCB0025EAE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0A0B8232230ADCB0025EAE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				B0A0B8582231E7AF0025EAE4 /* GameView.m */,
 				B0A0B8542231DD870025EAE4 /* MovementState.h */,
 				B0A0B8552231DDCC0025EAE4 /* MovementState.m */,
+				B05F220A228783C2009F88FB /* Goomba.h */,
+				B05F220B228783CE009F88FB /* Goomba.m */,
 				B0A0B8282230ADCB0025EAE4 /* Main.storyboard */,
 				B0A0B82B2230ADCC0025EAE4 /* Assets.xcassets */,
 				B0A0B82D2230ADCC0025EAE4 /* LaunchScreen.storyboard */,
@@ -272,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05F220C228783CE009F88FB /* Goomba.m in Sources */,
 				B0A0B8272230ADCB0025EAE4 /* ViewController.m in Sources */,
 				B0A0B8592231E7AF0025EAE4 /* GameView.m in Sources */,
 				B0A0B8322230ADCC0025EAE4 /* main.m in Sources */,

@@ -11,6 +11,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MovementState.h"
+#import "Goomba.h"
 
 @interface GameView: UIView
 
@@ -34,9 +35,16 @@
 @property (nonatomic) BOOL isJumping;
 @property (nonatomic) int walkMagnitude;
 
-@property (nonatomic, strong) NSTimer *timer;
 @property bool isPlaying;
+@property int currLevel;
+@property int numEntitiesToSpawn;
+@property int chance;
+@property bool newInit;
+
+@property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) MovementState* ms;
+@property (nonatomic, strong) NSMutableArray* entities;
+@property (nonatomic, strong) NSMutableArray* entitiesClasses;
 
 
 -(IBAction) pressWalkLeft: (UIButton*) sender;

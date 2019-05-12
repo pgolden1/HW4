@@ -23,8 +23,14 @@
         _isWalking = false;
         _walkMagnitude = 0;
         _isJumping = false;
+        _currLevel = 1;
+        _entities = [[NSMutableArray alloc] init];
+        _entitiesClasses = [[NSMutableArray alloc] init];
+        _numEntitiesToSpawn = 10;
+        _chance = 1000;
+        _newInit = true;
         
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:.05 repeats:YES block:^(NSTimer * _Nonnull timer) {
             [self performSelectorOnMainThread:@selector(tick:) withObject:self.timer waitUntilDone:NO];
         }];
     }
@@ -58,6 +64,9 @@
     [_buttonTop setEnabled: YES];
     [_buttonPlay setEnabled: NO];
     
+    _newInit = true;
+    
+    NSLog(@"%lu", (unsigned long)[_entities count]);
     [UIView animateWithDuration:0.4f animations:^{
         
         [self->_buttonTop setAlpha: 1.0f];
@@ -74,6 +83,21 @@
     [_buttonTop setEnabled: NO];
     [_buttonPlay setEnabled: YES];
     
+    CGRect marioCurrent = _mario.frame;
+    marioCurrent.origin.x = 310;
+    marioCurrent.origin.y = 249;
+    _mario.frame = marioCurrent;
+    
+    [_ms setX: 310];
+    [_ms setY: 249];
+    
+    for(int i = 0; i < [_entities count]; i++){
+        ((UIImageView*) _entities[i]).image = nil;
+        [((UIImageView*) _entities[i]) removeFromSuperview];
+        [_entities removeObject: _entities[i]];
+        [_entitiesClasses removeObject: _entitiesClasses[i]];
+    }
+    
     [UIView animateWithDuration:0.4f animations:^{
         
         [self->_buttonTop setAlpha: 0.0f];
@@ -85,34 +109,42 @@
 
 -(void) tick: (id) sender{
     if(_isPlaying){
-        if([_ms isWalkng]){
+        
+        //mario's movement
+        if([_ms isWalkng] || [_ms isJumpng] || ![_ms isOnFloor]){
             
-            //height = 188
-            
-            
-            
-            NSLog(@"%d", _walkMagnitude);
             CGRect marioCurrent = _mario.frame;
-            NSLog(@"%f %f", marioCurrent.origin.x, marioCurrent.origin.y);
             marioCurrent.origin = [_ms getCurrentPos];
-            
-            /*if(_walkDirection){
-                if(marioCurrent.origin.y > 188)
-                if(marioCurrent.origin.x < 620){
-                    marioCurrent.origin.x += _walkMagnitude;
-                    if(_walkMagnitude < 15) _walkMagnitude += 2;
-                }
-            }
-            else{
-                if(marioCurrent.origin.x > 12){
-                    marioCurrent.origin.x += _walkMagnitude;
-                    if(_walkMagnitude > -15) _walkMagnitude -= 2;
-                }
-            }*/
-
-                
             _mario.frame = marioCurrent;
         }
+        
+        //goombas
+        
+        if(_newInit){
+            Goomba* newGoomba = [[Goomba alloc] init];
+            CGRect newEnt = CGRectMake(65, 265, 43, 46);
+            UIImageView *newIV = [[UIImageView alloc] initWithFrame:newEnt];
+            newIV.image = [newGoomba getCurrentImg];
+            [self.superview addSubview:newIV];
+            [_entities addObject:newIV];
+            [_entitiesClasses addObject:newGoomba];
+            _newInit = false;
+        }
+        
+        for(int i = 0; i < [_entities count]; i++){
+            Goomba* currentGoomba = _entitiesClasses[i];
+            UIImageView* currentEnt = _entities[i];
+            CGRect currentEntPos = currentEnt.frame;
+            currentEntPos.origin = [currentGoomba getCurrentPos];
+            currentEnt.frame = currentEntPos;
+            
+        }
+        //random chance, spawn one, check if deleted yet, 
+        
+        
+        
+        
+        
     }
 }
 

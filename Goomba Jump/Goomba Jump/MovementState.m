@@ -21,10 +21,13 @@
         _walkDirection = false;
         _isWalking = false;
         _walkMagnitude = 0;
+        _vertMagnitude = 0;
         _isJumping = false;
+        _counter = 2;
         
         _currentX = 310;
         _currentY = 249;
+        
         
         _marioWalkR1 = [UIImage imageNamed: @"walkingmario1"];
         _marioWalkR2 = [UIImage imageNamed: @"walkingmario2"];
@@ -70,15 +73,30 @@
 }
 
 -(void) pressjump{
-    _currentY--;
+    if(_vertMagnitude == 0){
+        _vertMagnitude = 30;
+        _isJumping = true;
+    }
 }
 
 -(bool) isWalkng{
     return _isWalking;
 }
+-(bool) isJumpng{
+    return _isJumping;
+}
 
--(void) setRight{
-    _walkDirection = true;
+-(void) setX: (float) newX{
+    _currentX = newX;
+}
+
+-(void) setY: (float) newY{
+    _currentX = newY;
+}
+
+-(bool) isOnFloor{
+    if(_currentX > 64 && _currentX < 561) return (_currentY > 245);
+    else return (_currentY > 185);
 }
 
 -(UIImage*) getCurrentMS{
@@ -107,35 +125,81 @@
 }
 
 -(CGPoint) getCurrentPos{
-    if(_walkDirection){
-        if(_currentY < 189){
-            if(_currentX < 620){
+    if(_isWalking){
+        if(_walkDirection){
+            if(_currentY < 189){ //if on top of pipes
+            
                 _currentX += _walkMagnitude;
                 if(_walkMagnitude < 15) _walkMagnitude += 2;
+                
+                if(_currentX > 623) _currentX = 623;
+                if(_currentX < 0) _currentX = 0;
+            
             }
+            else{ //if between pipes
+                _currentX += _walkMagnitude;
+                if(_walkMagnitude < 15) _walkMagnitude += 2;
+                
+                if(_currentX > 560) _currentX = 560;
+                if(_currentX < 55) _currentX = 55;
+            }
+        }
+         else{
+             if(_currentY < 189){ //if on top of pipes
+                 
+                 _currentX -= _walkMagnitude;
+                 if(_walkMagnitude < 15) _walkMagnitude += 2;
+                 
+                 if(_currentX > 623) _currentX = 623;
+                 if(_currentX < 0) _currentX = 0;
+                 
+             }
+             else{ //if between pipes
+                 _currentX -= _walkMagnitude;
+                 if(_walkMagnitude < 15) _walkMagnitude += 2;
+                 
+                 if(_currentX > 560) _currentX = 560;
+                 if(_currentX < 65) _currentX = 65;
+             }
+         }
+    }
+    
+    //gravity
+    {
+        
+        if(_currentX > 64 && _currentX < 561){ //if next to pipes
+            if(_currentY < 249 + _vertMagnitude){
+                _currentY -= (_vertMagnitude - 15);
+                _vertMagnitude -= pow(_counter, 1/2);
+            }
+            if(_currentY >= 249) _currentY = 248;
+        }
+        else{ //if on top of pipes
+            if(_currentY < 189 + _vertMagnitude){
+                _currentY -= (_vertMagnitude - 15);
+                _vertMagnitude -= pow(_counter, 1/2);
+            }
+            
+            if(_currentY >= 189) _currentY = 188;
+        }
+        
+        
+        if(_vertMagnitude < 0){
+            _vertMagnitude = 0;
+            _counter = 2;
+            _isJumping = false;
+            
         }
         else{
-            if(_currentX < 540){
-                _currentX += _walkMagnitude;
-                if(_walkMagnitude < 15) _walkMagnitude += 2;
-            }
+            _counter = _counter * _counter * _counter;
         }
+        
+        if(_currentY < 5) _currentY = 5;
+        
+        //NSLog(@"%f %f %f", _currentX, _currentY, _vertMagnitude);
+        
     }
-     else{
-         if(_currentY > 188){
-             if(_currentX > 12){
-                 _currentX += _walkMagnitude;
-                 if(_walkMagnitude > -15) _walkMagnitude -= 2;
-             }
-         }
-         else{
-             if(_currentX > 92){
-                 _currentX += _walkMagnitude;
-                 if(_walkMagnitude > -15) _walkMagnitude -= 2;
-             }
-         }
-     }
-    
+
     
     return CGPointMake(_currentX, _currentY);
 }
