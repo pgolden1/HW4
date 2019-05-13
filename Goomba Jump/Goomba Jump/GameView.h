@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonTop;
 @property (weak, nonatomic) IBOutlet UIButton *buttonPlay;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
 
 //false for left, true for right
 @property (nonatomic) BOOL walkDirection;
@@ -41,6 +42,7 @@
 @property int chance;
 @property int initCounter;
 @property bool newInit;
+@property int waitCounter;
 
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) MovementState* ms;

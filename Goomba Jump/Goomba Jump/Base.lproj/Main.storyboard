@@ -93,6 +93,13 @@
                                 <rect key="frame" x="310" y="249" width="48" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjZ-uY-P9l">
+                                <rect key="frame" x="517" y="20" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="T17-KU-Jgj"/>
@@ -103,6 +110,7 @@
                             <outlet property="buttonRight" destination="HmO-La-6lY" id="0j0-TN-lku"/>
                             <outlet property="buttonTop" destination="UrL-07-e50" id="jS5-Bo-sAu"/>
                             <outlet property="floor" destination="Kn3-Ma-ahT" id="0Sm-aM-C8n"/>
+                            <outlet property="levelLabel" destination="jjZ-uY-P9l" id="V6t-JC-5Xl"/>
                             <outlet property="logo" destination="gxq-t4-wSD" id="llK-O7-v55"/>
                             <outlet property="mario" destination="ZFS-Z3-McK" id="lVD-VC-Ftq"/>
                             <outlet property="pipeLeft" destination="Ybp-sZ-vKn" id="OZ4-cA-DXF"/>

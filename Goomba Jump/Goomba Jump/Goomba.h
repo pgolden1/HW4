@@ -21,7 +21,7 @@
 
 -(CGPoint) getCurrentPos;
 -(void) setCurrentX:(float)currentX;
--(void) deleteCurrent;
+//-(void) deleteCurrent;
 -(UIImage*) getCurrentImg;
 
 
