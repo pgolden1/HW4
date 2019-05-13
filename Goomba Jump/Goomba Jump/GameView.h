@@ -39,14 +39,17 @@
 @property int currLevel;
 @property int numEntitiesToSpawn;
 @property int chance;
+@property int initCounter;
 @property bool newInit;
 
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) MovementState* ms;
 @property (nonatomic, strong) NSMutableArray* entities;
 @property (nonatomic, strong) NSMutableArray* entitiesClasses;
+@property (nonatomic, strong) NSMutableArray* marioCoordsX;
+@property (nonatomic, strong) NSMutableArray* marioCoordsY;
 
-
+-(void) initialize;
 -(IBAction) pressWalkLeft: (UIButton*) sender;
 -(IBAction) releaseWalkLeft: (UIButton*) sender;
 -(IBAction) pressWalkRight: (UIButton*) sender;

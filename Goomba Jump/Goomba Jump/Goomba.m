@@ -48,4 +48,8 @@
     return CGPointMake(_currentX, _currentY);
 }
 
+-(void) setCurrentX:(float)currentX{
+    _currentX = currentX;
+}
+
 @end

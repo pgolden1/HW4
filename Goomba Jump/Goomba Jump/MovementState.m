@@ -26,7 +26,7 @@
         _counter = 2;
         
         _currentX = 310;
-        _currentY = 249;
+        _currentY = 35;
         
         
         _marioWalkR1 = [UIImage imageNamed: @"walkingmario1"];
@@ -97,6 +97,10 @@
 -(bool) isOnFloor{
     if(_currentX > 64 && _currentX < 561) return (_currentY > 245);
     else return (_currentY > 185);
+}
+
+-(void) setDirection: (bool) newDir{
+    _walkDirection = newDir;
 }
 
 -(UIImage*) getCurrentMS{

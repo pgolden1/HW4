@@ -20,6 +20,7 @@
 @property (nonatomic) bool walkDirection; //true for right, false for left
 
 -(CGPoint) getCurrentPos;
+-(void) setCurrentX:(float)currentX;
 -(void) deleteCurrent;
 -(UIImage*) getCurrentImg;
 
